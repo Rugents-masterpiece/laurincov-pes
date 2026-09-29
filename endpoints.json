@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "endpoints": [
+    {
+      "name": "Peppol features",
+      "url": "http://127.0.0.1:10001/",
+      "managed": true,
+      "restart": [
+        "docker",
+        "restart",
+        "peppol-features"
+      ]
+    },
+    {
+      "name": "OpenHands Agent Canvas",
+      "url": "http://127.0.0.1:8000/",
+      "managed": true
+    },
+    {
+      "name": "Orbit",
+      "url": "http://127.0.0.1:7878/",
+      "managed": true
+    },
+    {
+      "name": "Hermes Gateway API",
+      "url": "http://127.0.0.1:9119/api/health",
+      "managed": true
+    },
+    {
+      "name": "Open WebUI",
+      "url": "http://127.0.0.1:3080/",
+      "managed": true,
+      "paused": true,
+      "restart": [
+        "docker",
+        "restart",
+        "open-webui"
+      ]
+    },
+    {
+      "name": "OpenViking",
+      "url": "http://127.0.0.1:1933/health",
+      "managed": true
+    },
+    {
+      "name": "Firecrawl API",
+      "url": "http://127.0.0.1:3002/",
+      "managed": true,
+      "restart": [
+        "docker",
+        "restart",
+        "firecrawl-api-1"
+      ]
+    },
+    {
+      "name": "Qwen Prisma",
+      "url": "http://192.168.16.243:8001/health",
+      "managed": true
+    },
+    {
+      "name": "Gemma",
+      "url": "http://127.0.0.1:8001/health",
+      "managed": true
+    },
+    {
+      "name": "LiteLLM API",
+      "url": "http://127.0.0.1:4000/health/liveliness",
+      "managed": true,
+      "restart": [
+        "docker",
+        "restart",
+        "litellm-litellm-1"
+      ]
+    },
+    {
+      "name": "SeaweedFS Master",
+      "url": "http://127.0.0.1:9333/",
+      "managed": true
+    },
+    {
+      "name": "SeaweedFS Volume server",
+      "url": "http://127.0.0.1:9310/status",
+      "managed": true
+    },
+    {
+      "name": "SeaweedFS S3 systémová inštancia",
+      "url": "http://127.0.0.1:13000/status",
+      "managed": true
+    },
+    {
+      "name": "MinIO S3 API",
+      "url": "http://127.0.0.1:9102/minio/health/live",
+      "managed": true
+    },
+    {
+      "name": "MinIO web konzola",
+      "url": "http://127.0.0.1:9103/",
+      "managed": true
+    },
+    {
+      "name": "CLM Draft-legal Dash",
+      "url": "http://127.0.0.1:5173/",
+      "managed": true,
+      "paused": true
+    },
+    {
+      "name": "CLM Draft-legal API",
+      "url": "http://127.0.0.1:3001/health",
+      "managed": true
+    },
+    {
+      "name": "CLM Agents API",
+      "url": "http://127.0.0.1:8002/health",
+      "managed": true
+    },
+    {
+      "name": "CLM Elasticsearch API",
+      "url": "http://127.0.0.1:9200/",
+      "managed": true
+    },
+    {
+      "name": "CLM Gotenberg API",
+      "url": "http://127.0.0.1:3003/health",
+      "managed": true
+    },
+    {
+      "name": "Rudo kričí",
+      "url": "http://127.0.0.1:10075/",
+      "managed": true
+    },
+    {
+      "name": "AI GPU Manager",
+      "url": "http://127.0.0.1:18080/health",
+      "managed": true
+    }
+  ]
+}
