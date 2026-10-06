@@ -14,7 +14,8 @@
     {
       "name": "OpenHands Agent Canvas",
       "url": "http://127.0.0.1:8000/",
-      "managed": true
+      "managed": true,
+      "paused": true
     },
     {
       "name": "Orbit",
@@ -132,6 +133,12 @@
       "name": "AI GPU Manager",
       "url": "http://127.0.0.1:18080/health",
       "managed": true
+    },
+    {
+      "name": "SAPI-SK proxy",
+      "url": "https://sapi.patjo.uk/health",
+      "managed": true,
+      "paused": false
     }
   ]
 }
